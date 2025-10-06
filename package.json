@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "modern-normalize": "^3.0.1",
+    "swiper": "^12.0.2"
+  }
+}

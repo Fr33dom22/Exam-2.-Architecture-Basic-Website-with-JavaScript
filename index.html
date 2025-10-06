@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monticello</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,400&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <div class="header__nav-menu">
+          <a href="#header" class="logo">
+            <img
+              src="/images/logo.png"
+              alt="Monticello Logo"
+              class="logo__image"
+            />
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__list swiper-pagination"></ul>
+          </nav>
+
+          <div class="social">
+            <ul class="social__list">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="soc__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="soc__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="soc__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__content">
+          <h1 class="header__title">Simple & Modern</h1>
+          <p class="header__subtitle">We make the world beautiful everyday</p>
+          <a href="#projects" class="header__arrow">
+            <svg class="arrow__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Projects -->
+      <section class="projects container" id="projects">
+        <div class="container">
+          <h2 class="section__title">WHAT WE DO</h2>
+
+          <div class="project__one">
+            <img
+              class="project__img"
+              src="/images/project-one.png"
+              alt="Trade Center"
+              width="845"
+            />
+            <div class="project__info">
+              <p class="sub__title">ONE WORLD</p>
+              <h3 class="project__title">TRADE CENTER</h3>
+              <p class="project__desc">
+                Increasing prosperity in our lives can be accomplished by having
+                the right frame of mind.
+              </p>
+              <button class="project__btn">MORE DETAILS</button>
+              <div class="location">
+                <svg class="icon__geotag" width="9" height="17">
+                  <use href="/images/symbol-defs.svg#icon-geotag"></use>
+                </svg>
+                <p class="geo__text">
+                  New York City, United States - 1776 feet
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__two">
+            <img
+              class="project__img"
+              src="/images/project-two.png"
+              alt="Commerce Centre"
+              width="845"
+            />
+            <div class="project__info">
+              <p class="sub__title">INTERNATIONAL</p>
+              <h3 class="project__title">COMMERCE CENTRE</h3>
+              <p class="project__desc">
+                Successful businesses have many things in common, today we’ll
+                look at the big ‘R’ of recognition and how a digital advertising
+                network may help.
+              </p>
+              <button class="project__btn">MORE DETAILS</button>
+              <div class="location">
+                <svg class="icon__geotag" width="9" height="17">
+                  <use href="/images/symbol-defs.svg#icon-geotag"></use>
+                </svg>
+                <p class="geo__text">Hong Kong - 1588 feet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="news" id="news">
+        <div class="news__container container">
+          <h2 class="section__title news__title">LATEST NEWS</h2>
+
+          <div class="news__slider-wrapper">
+            <div class="news__slider swiper">
+              <div class="swiper-wrapper">
+                <!-- JS -->
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="news__prev">
+              <svg class="arrow__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+            <div class="news__next">
+              <svg class="arrow__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+
+            <!-- Pagination -->
+            <div class="news__dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="section__title">GALLERY</h2>
+
+          <div class="gallery__grid">
+            <!-- left -->
+            <div class="gallery__item gallery__item--big">
+              <img src="images/gallery-1.jpg" alt="Building Large" />
+              <div class="gallery__zoom">
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-zoom"></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- right -->
+            <div class="gallery__right">
+              <div class="gallery__item">
+                <img src="images/gallery-2.jpg" alt="Building Small 1" />
+              </div>
+              <div class="gallery__item">
+                <img src="images/gallery-3.jpg" alt="Building Small 2" />
+              </div>
+              <div class="gallery__item">
+                <img src="images/gallery-4.jpg" alt="Building Small 3" />
+              </div>
+              <div class="gallery__item">
+                <img src="images/gallery-5.jpg" alt="Building Small 4" />
+              </div>
+            </div>
+          </div>
+
+          <!-- SEE MORE -->
+          <button class="gallery__btn">SEE MORE</button>
+
+          <!-- Modal -->
+          <div class="gallery__modal">
+            <span class="gallery__close">&times;</span>
+            <img class="gallery__modal-img" src="" alt="Modal image" />
+            <button class="gallery__modal-prev">&#10094;</button>
+            <button class="gallery__modal-next">&#10095;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map & Footer -->
+      <section class="map-footer-section" id="map-footer">
+        <!-- Map -->
+        <div id="world-map"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer-left">
+          <a href="#" class="logo footer__logo">
+            <img src="./images/logo.png" alt="Monticello Logo" />
+          </a>
+          <p class="footer__copy">Copyrights © 2020 Monticello</p>
+        </div>
+        <ul class="footer-right">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer__soc__icon soc__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+              <svg class="footer__soc__icon soc__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer__soc__icon soc__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="map-overlay">
+        <h3 class="footer__title">GET IN TOUCH</h3>
+        <div class="overlay-content">
+          <div class="overlay-left">
+            <div class="contact-item">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#icon-location"></use>
+              </svg>
+              <p class="modal__text">91 Nolan Extensions Suite 670</p>
+            </div>
+
+            <div class="contact-item">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <p class="modal__text">+001 356-868-2454</p>
+            </div>
+
+            <div class="contact-item">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+              <p class="modal__text">montichello@service.com</p>
+            </div>
+
+            <div class="contact-item">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#icon-clock"></use>
+              </svg>
+              <p class="modal__text">From 07:05AM to 19:30PM</p>
+            </div>
+          </div>
+
+          <div class="overlay-right">
+            <input class="modal__name" type="text" placeholder="Name" />
+            <input class="modal__email" type="email" placeholder="Email" />
+            <button class="modal__btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./map.js"></script>
+  </body>
+</html>
