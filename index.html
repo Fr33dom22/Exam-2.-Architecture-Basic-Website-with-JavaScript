@@ -163,13 +163,23 @@
 
             <!-- Navigation -->
             <div class="news__prev">
-              <svg class="arrow__icon" width="40" height="40">
-                <use href="/images/symbol-defs.svg#icon-arrow-left"></use>
+              <svg
+                class="arrow__icon"
+                width="40"
+                height="40"
+                aria-hidden="true"
+              >
+                <use href="images/symbol-defs.svg#icon-arrow-left"></use>
               </svg>
             </div>
             <div class="news__next">
-              <svg class="arrow__icon" width="40" height="40">
-                <use href="/images/symbol-defs.svg#icon-arrow-right"></use>
+              <svg
+                class="arrow__icon"
+                width="40"
+                height="40"
+                aria-hidden="true"
+              >
+                <use href="images/symbol-defs.svg#icon-arrow-right"></use>
               </svg>
             </div>
 
@@ -314,8 +324,14 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./map.js"></script>
   </body>
